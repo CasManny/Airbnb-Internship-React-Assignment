@@ -10,7 +10,7 @@ import PublishOutlinedIcon from "@mui/icons-material/PublishOutlined";
 const PastExperience = () => {
   return (
     <div className="container my-10">
-      <h1 className="text-3xl">Past Experiences</h1>
+      <h1 className="md:text-3xl text-2xl my-3">Past Experiences</h1>
       <div className="grid lg:grid-cols-4 gap-4 md:grid-cols-2 grid-cols-1">
         {pastExperiences.map((item, index) => (
           <Card sx={{ maxWidth: 345 }} key={index} className="relative">

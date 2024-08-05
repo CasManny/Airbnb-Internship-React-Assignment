@@ -5,10 +5,10 @@ import WhatshotOutlinedIcon from "@mui/icons-material/WhatshotOutlined";
 
 const FooterCopyright = () => {
   return (
-    <div className="p-10 flex items-center justify-between font-light text-[14px]">
-      <div className="flex items-center gap-2">
+    <div className="p-10 flex items-center flex-col-reverse md:flex-row justify-between font-light text-[14px]">
+      <div className="flex items-center gap-2 flex-col md:flex-row">
         <p>&copy; 2024 Airbnb, Inc.</p>
-        <div className="flex gap-2">
+        <div className="flex gap-2 flex-col py-2 md:flex-row">
           <span className="hover:underline">. Privacy</span>
           <span className="hover:underline">. Terms</span>
           <span className="hover:underline">. Sitemaps</span>
@@ -20,7 +20,7 @@ const FooterCopyright = () => {
           <LanguageOutlinedIcon />
           <p>English(IN)</p>
         </div>
-        <div className="flex items-center gap-1">
+        <div className="items-center gap-1 hidden md:flex">
           <FacebookOutlinedIcon />
           <SubscriptionsOutlinedIcon />
           <WhatshotOutlinedIcon />
