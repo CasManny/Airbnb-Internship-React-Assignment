@@ -45,7 +45,6 @@ import {
   RowingOutlined,
   SkateboardingOutlined,
   SportsKabaddiOutlined,
-  Subtitles,
   SurfingOutlined,
   TravelExploreOutlined,
   TurnedInOutlined,
