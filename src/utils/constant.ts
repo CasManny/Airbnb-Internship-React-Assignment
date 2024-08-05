@@ -57,8 +57,6 @@ import {
 } from "@mui/icons-material";
 import AirIcon from "@mui/icons-material/Air";
 import HolidayVillageOutlinedIcon from "@mui/icons-material/HolidayVillageOutlined";
-import airbnb1 from "../assets/airbnb1.jpg";
-import airbnb2 from "../assets/airbnb2.jpg";
 import airbnb3 from "../assets/airbnb3.jpg";
 import airbnb4 from "../assets/airbnb4.jpg";
 import airbnb30 from "../assets/airbnb30.jpg";
