@@ -7,17 +7,18 @@ import SearchIcon from "@mui/icons-material/Search";
 
 const Navbar = () => {
   const [isSticky, setIsSticky] = useState<boolean>(false);
-  const [value, setValue] = useState<string>('') 
+  const [value, setValue] = useState<string>("");
 
-  const handleConsole = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setValue(e.target.value)
+  const handleConsole = () => {
     console.log({
       yourTypedwords: value,
-      mydesire: "I will be very grateful if i'm selected for this internship to build that experience of working with a tem",
+      mydesire:
+        "I will be very grateful if i'm selected for this internship to build that experience of working with a tem",
       assignment: "AirBnb clone by Code With Zosh",
-      myCountry: "Nigeria"
-    })
-  }
+      myCountry: "Nigeria",
+    });
+    setValue("")
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -72,7 +73,9 @@ const Navbar = () => {
                 <input
                   placeholder="Search destination"
                   value={value}
-                  onChange={handleConsole}
+                  onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
+                    setValue(e.target.value)
+                  }
                   className="hover:bg-airbnb-hover w-full outline-none focus:outline-none active:outline-none "
                 />
               </div>
@@ -98,7 +101,10 @@ const Navbar = () => {
                   <p>Add guests</p>
                 </div>
 
-                <div className="w-10 h-10 bg-airbnb-bg-red rounded-full items-center cursor-pointer justify-center flex">
+                <div
+                  onClick={handleConsole}
+                  className="w-10 h-10 bg-airbnb-bg-red rounded-full items-center cursor-pointer justify-center flex"
+                >
                   <SearchIcon
                     className="text-airbnb-bg-white "
                     fontSize="medium"
@@ -106,7 +112,7 @@ const Navbar = () => {
                 </div>
               </div>
             </div>
-          </div> 
+          </div>
 
           <div className=" justify-evenly items-center hidden md:flex">
             <div className="p-3 hover:bg-airbnb-hover rounded-3xl cursor-pointer">
@@ -134,8 +140,7 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-      
-     
+
       <Filters />
     </div>
   );
