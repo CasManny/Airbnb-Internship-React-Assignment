@@ -324,8 +324,6 @@ export const navLinks = [
   },
 ];
 
-export const swiperoOne = [airbnb1, airbnb2, airbnb3, airbnb4];
-
 export const featuredProducts = [
   {
     image: airbnb30,
