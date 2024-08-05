@@ -1,7 +1,7 @@
 # Airbnb Internship React Assignment
 [Live Demo](https://airbnb-six-chi.vercel.app/)
 
-![Homepage](https://utfs.io/f/def59c1e-2c86-4b88-9649-02cd15467cff-8kf2hc.png)
+![Homepage](/src/assets/Screenshot%202024-08-05%20at%203.50.58%20PM.png)
 
 ## Project Tasks
 
